@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/nav_coinbbs"
+                android:icon="@drawable/ic_menu_send"
+                android:title="COINBBS"/>
+        <item
+                android:id="@+id/nav_bbscoin"
+                android:icon="@drawable/ic_menu_send"
+                android:title="BBSCOIN 공홈"/>
+        <item
+                android:id="@+id/nav_telegram"
+                android:icon="@drawable/ic_menu_share"
+                android:title="BBSCOIN 텔레그램"/>
+        <item
+                android:id="@+id/nav_money"
+                android:icon="@drawable/ic_account_balance_wallet_black_24dp"
+                android:title="BBSCOIN 웹지갑"/>
+    </group>
+
+    <item android:title="Link">
+        <menu>
+            <item
+                    android:id="@+id/nav_forum"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="한국공식포럼"/>
+            <item
+                    android:id="@+id/nav_twitter"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="Twitter"/>
+            <item
+                    android:id="@+id/nav_coinmarketcap"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="CoinMarketCap"/>
+        </menu>
+    </item>
+    <item android:title="설정">
+        <menu>
+            <item
+                    android:id="@+id/nav_exit"
+                    android:icon="@drawable/ic_exit_to_app_black_24dp"
+                    android:title="종료"/>
+
+        </menu>
+    </item>
+</menu>
