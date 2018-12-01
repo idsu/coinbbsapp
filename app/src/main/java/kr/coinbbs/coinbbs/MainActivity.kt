@@ -1,9 +1,9 @@
 package kr.coinbbs.coinbbs
 
 import android.content.ActivityNotFoundException
+import android.content.Context
 import android.os.Bundle
 import android.os.Build
-import android.support.design.widget.Snackbar
 import android.support.design.widget.NavigationView
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
@@ -14,7 +14,6 @@ import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 import android.widget.Toast
 import android.view.View
-import android.support.v7.app.AlertDialog
 import android.graphics.Bitmap
 import android.webkit.*
 import android.widget.ProgressBar;
@@ -191,9 +190,23 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
 
         }
+
+        fun openNewTabWindow(urls: String, context : Context) {
+            val uris = Uri.parse(urls)
+            val intents = Intent(Intent.ACTION_VIEW, uris)
+            val b = Bundle()
+            b.putBoolean("new_window", true)
+            intents.putExtras(b)
+            context.startActivity(intents)
+        }
+
         browser.loadUrl(getString(R.string.url_coinbbs))
 
     }
+
+
+
+
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {

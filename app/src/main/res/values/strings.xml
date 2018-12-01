@@ -3,10 +3,10 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">COINBBS</string>
-    <string name="nav_header_subtitle">코인비비에스</string>
+    <string name="nav_header_subtitle">COINBBS</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-    <string name="url_coinbbs">https://coinbbs.kr</string>
+    <string name="url_coinbbs">http://coinbbs.co</string>
     <string name="url_bbscoin">https://bbscoin.xyz</string>
     <string name="url_telegram">https://t.me/bbscoin_korea</string>
     <string name="url_bbsmoney">https://bbs.money/</string>
